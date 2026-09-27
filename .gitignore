@@ -1,0 +1,24 @@
+@"
+# MLflow
+mlruns/
+
+# Pytest
+.pytest_cache/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+venv/
+
+# Model artifacts
+*.pkl
+*.joblib
+*.model
+
+# Temporary files
+*.tmp
+*.log
+"@ | Set-Content .gitignore
