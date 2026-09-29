@@ -1,6 +1,7 @@
 .PHONY: install lint test train clean 
  
-install:  # Main branch change
+<
+install: 
 	python -m pip install --upgrade pip 
 	python -m pip install -r requirements.txt 
  
