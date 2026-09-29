@@ -11,7 +11,7 @@ test:
 	pytest -v
 
 train:
-	python src/train.py
+	python -m src.train
 
 clean:
 	python -c "import os, shutil; [os.remove(os.path.join(r,f)) for r,d,fs in os.walk('.') for f in fs if f.endswith('.pyc')]; [shutil.rmtree(os.path.join(r,d), ignore_errors=True) for r,ds,fs in os.walk('.') for d in list(ds) if d in ['__pycache__','.pytest_cache']]; [os.remove(os.path.join(r,f)) for r,d,fs in os.walk('.') for f in fs if f.endswith(('.tmp','.log'))]"
